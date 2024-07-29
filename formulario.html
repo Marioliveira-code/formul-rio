@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro para novos leitores</title>
+</head>
+<body>
+
+    <div>
+        <h1>Cadastro para nosso clube do livro</h1>
+        <p>Complete com suas informações, assim vamos te indicar para o nosso clube do livro que tenha mais a ver com suas preferências.</p>
+        <br>
+        <form>
+            <fieldset>
+                <div>
+                    <label>Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+
+                <div>
+                    <label>Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome">
+                </div>
+
+                <div>
+                    <label>Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+            </fieldset>
+
+            <h3>Preferências</h3>
+            <p>Aqui, será possível entender melhor sobre seu gosto e disponibilidade para a participação do nosso clube de leitura.</p>
+            <fieldset>
+            <div>
+                <label>Você tem acesso ao Notion?</label>
+                <label>
+                    <input type="radio" name="categoria" value="sim" checked> Sim
+                </label>
+                <label>
+                    <input type="radio" name="categoria" value="Não"> Não
+                </label>
+            </div>
+
+            <div>
+                <label>Selecione o tipo de romance que você prefere:</label><br>
+                <input type="checkbox" id="l1" name="l1" value="infantojuvenil">
+                <label for="l1"> Infantojuvenil </label>
+                <input type="checkbox" id="l2" name="l2" value="Policial">
+                <label for="l2"> Policial </label>
+                <input type="checkbox" id="l3" name="l3" value="darkromance">
+                <label for="l3"> Dark Romance </label>
+                <input type="checkbox" id="l4" name="l4" value="fantasia">
+                <label for="l1"> Fantasia </label>
+            </div>
+            <div>
+                <label> Com qual frequência você lê?</label>
+                <select id="confirma">
+                    <option selected disabled value=""> Selecione...</option>
+                    <option>Todos os dias</option>
+                    <option>De vez em quando</option>
+                    <option>Nunca</option>
+            </div>
+        </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
